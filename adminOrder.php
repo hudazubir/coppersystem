@@ -53,8 +53,9 @@ $select_orders = mysqli_query($conn, "SELECT * FROM `touristorder` LIMIT $start_
 
     <!-- custom admin css file link  -->
     <link rel="stylesheet" href="css/admin.css">
-    <style>
-     .pagination {
+
+<style>
+.pagination {
     text-align: center;
     margin: 20px 0;
 }
@@ -77,9 +78,8 @@ $select_orders = mysqli_query($conn, "SELECT * FROM `touristorder` LIMIT $start_
     color: #fff;
     border-color: #333;
 }
+</style>
 
-
-    </style>
 </head>
 <body>
    
