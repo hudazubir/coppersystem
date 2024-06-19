@@ -32,20 +32,16 @@ if(!isset($user_id)){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>about us</h3>
+   <h3>WANISMA CRAFT & TRADING</h3>
    <!-- <p> <a href="home.php">home</a> / about </p> -->
 </div>
 
 <section class="about">
-
    <div class="flex">
-
       <div class="image">
          <img src="assets/about-1.png" alt="">
       </div>
-
       <div class="content">
-         <h3>WANISMA CRAFT & TRADING</h3>
          <p>Wanisma Craft & Trading Company is one of the companies that runs the business of copper-based goods. 
             This company is one of the companies passed down from one generation to the next, from father to son. 
             Basically, it was run by <b>Hj, Wan Ismail Bin Wan Omar</b> together with his wife <b>Hjh Nik Rakna Binti Nik Embong</b> 
@@ -54,61 +50,48 @@ if(!isset($user_id)){
             <b>1968</b> and grew until he died in 1995. He had also received the State of Terengganu craft figure award in 1992 by the 
             former Menteri Besar of Terengganu Dato' Seri Wan Mokhtar Ahmad.
            <br>  
+           After his passing, the business was taken over by his son, Wan Mahadi Bin Ismail, in 1995 and registered under the 
+           name WANISMA CRAFT & TRADING. With his determination and initiative, he further developed the business to a higher level.   
+         </p>
+      </div>
+   </div> <br>
+
+   <div class="content-container">
+    <div class="section">
+        <h3>WHAT COPPER</h3><br>
+        <p>
+            The copper products produced include wedding items such as pahar, tepak sireh, dulang, rose water sprinklers, 
+            and many others, as well as cookie molds and souvenirs. This company also makes royal items such as scepters, belt buckles, 
+            decorative eggs, palace interior decorations, mosque pulpits, and many more. This company is the largest producer of 
+            copper goods in the state of Terengganu Darul Iman.
+        </p>
+        <div class="image-grid-1">
+            <img src="assets/tepak sireh.png" alt="Copper Product 1">
+            <img src="assets/batu bersurat.png" alt="Copper Product 2">
+            <img src="assets/sudu garfu.png" alt="Copper Product 1">
+            <img src="assets/dulang.png" alt="Copper Product 2">
+            <img src="assets/gobek.png" alt="Copper Product 1">
+            <img src="assets/IMG_4861.png" alt="Copper Product 2">
+        </div>
+    </div>
+<br><br>
+    <div class="section">
+        <h3>ABOUT WANISMA BRASS</h3><br>
+        <p>
             This copper enterprise serves as an identity for the state of Terengganu Darul Iman and attracts tourists from both domestic
             and international destinations to witness the rich local folk art, abundant with delicate handiwork. 
             These copper products are branded as Wanisma Brass, a blend of five types of metals including bronze, in proportions as 
-            determined.   
-         </p>
-      </div>
-
-   </div>
+            determined.
+        </p>
+        <div class="image-grid-2">
+            <img src="assets/kilat.png" alt="Copper Product 1">
+            <img src="assets/lilin.png" alt="Copper Product 2">
+            <img src="assets/cuci.png" alt="Copper Product 3">
+            <img src="assets/nempel.png" alt="Copper Product 4">
+        </div>
+    </div>
+</div>
 </section>
-
-<!-- <section class="authors">
-
-   <h1 class="title">greate authors</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="images/author-1.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="images/author-2.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="images/author-3.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-   </div>
-
-</section> -->
-
-
-
-
-
-
 
 <?php include 'footer.php'; ?>
 

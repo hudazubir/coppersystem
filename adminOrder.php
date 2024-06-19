@@ -88,11 +88,11 @@ $select_orders = mysqli_query($conn, "SELECT * FROM `touristorder` LIMIT $start_
 <section class="orders">
     <h1 class="title">Placed Orders</h1>
 
-    <?php if (isset($message)) {
-        foreach ($message as $message) {
-            echo '<div class="message">'.$message.'</div>';
-        }
-    } ?>
+    <?php //if (isset($message)) {
+        // foreach ($message as $msg) {
+        //     echo '<div class="message">'.$message.'</div>';
+        // }
+    //} ?>
 
     <div class="table-container">
         <table>

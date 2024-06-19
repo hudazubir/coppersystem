@@ -51,8 +51,10 @@ if(!isset($user_id)){
          songket and batik. Originally, Kampung Ladang was renowned for copperware production, and that's where our workshop used 
          to be located. However, due to development initiatives, we've relocated to a new site in Kampung Pulau Kerengga, Marang.</p>
          <p>
-         Mr. Salleh Mohd, known affectionately as Pak Leh by the locals, has been involved in the copperware business since a 
-         young age, learning the craft from his father. Pak Leh also owns a shop in Pasar Kedai Payang, Kuala Terengganu.</p>
+         The copper products produced include wedding items such as pahar, tepak sireh, dulang, rose water sprinklers, 
+         and many others, as well as cookie molds and souvenirs. This company also makes royal items such as scepters, belt buckles, 
+         decorative eggs, palace interior decorations, mosque pulpits, and many more. This company is the largest producer of 
+         copper goods in the state of Terengganu Darul Iman.</p>
       </div>
 
    </div>
@@ -76,7 +78,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div> -->
-         <h3>Pembentukan</h3>
+         <h3>Forming</h3>
       </div>
 
       <div class="box">
@@ -93,7 +95,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div> -->
-         <h3>Membuat Acuan</h3>
+         <h3>Making Molds</h3>
       </div>
 
       <div class="box">
@@ -108,7 +110,7 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div> -->
-         <h3>Lebur/Menuang</h3>
+         <h3>Melting / Pouring</h3>
       </div>
 
       <div class="box">
@@ -123,35 +125,8 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div> -->
-         <h3>Mencuci/menggilap</h3>
+         <h3>Washing / Polishing</h3>
       </div>
-
-      <!-- <div class="box">
-         <img src="assets/nempel.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="images/pic-6.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-         <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div>
-         <h3>john deo</h3>
-      </div> -->
-
    </div>
 
 </section>

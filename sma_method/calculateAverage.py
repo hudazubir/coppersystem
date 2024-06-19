@@ -30,7 +30,7 @@ def calculate_averages():
     average_price = total_price / total_products if total_products > 0 else 0
 
     # Format average_price to 2 decimal places and add "RM" prefix
-    formatted_average_price = f"RM {average_price:.2f}"
+    formatted_average_price = f"RM{average_price:.2f}"
 
     conn.close()
 
@@ -41,4 +41,5 @@ def calculate_averages():
 
 if __name__ == "__main__":
     averages = calculate_averages()
-    print(json.dumps(averages))
+    output = f"Average Stock: {averages['average_stock']}, \nAverage Price: {averages['average_price']}"
+    print(output)

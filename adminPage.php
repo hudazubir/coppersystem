@@ -33,7 +33,7 @@ if(!isset($admin_id)){
 
 <!-- admin dashboard section starts  -->
 
-<section class="dashboard">
+<section class="dashboard">  <!-- style="background-image: url(assets/header-1.png);" -->
 
    <h1 class="title">dashboard</h1>
 
@@ -51,7 +51,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>RM<?php echo $total_pendings; ?>.00</h3>
-         <p>total pendings</p>
+         <p>Total Pendings</p>
       </div>
 
       <div class="box">
@@ -66,7 +66,22 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>RM<?php echo $total_completed; ?>.00</h3>
-         <p>completed payments</p>
+         <p>Completed payments</p>
+      </div>
+
+      <div class="box">
+         <?php
+            $total_completed = 0;
+            $select_completed = mysqli_query($conn, "SELECT total_price FROM `touristorder` WHERE payment_status = 'Successful'") or die('query failed');
+            if(mysqli_num_rows($select_completed) > 0){
+               while($fetch_completed = mysqli_fetch_assoc($select_completed)){
+                  $total_price = $fetch_completed['total_price'];
+                  $total_completed += $total_price;
+               };
+            };
+         ?>
+         <h3>RM<?php echo $total_completed; ?>.00</h3>
+         <p>Successful payments</p>
       </div>
 
       <div class="box">

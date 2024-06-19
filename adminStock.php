@@ -71,7 +71,7 @@ $averages = json_decode($output, true);
 
 // Initialize average stock and average price to default values
 $average_stock = 0;
-$average_price = 0;
+$average_price = 'RM 0.00';
 
 // Check if averages were calculated correctly
 if (is_array($averages)) {
@@ -108,7 +108,7 @@ if (is_array($averages)) {
     
     <?php
     if (!empty($message)) {
-        foreach ($message as $msg) {
+        foreach ($message as $message) {
             echo "<div class='message'>$msg</div>";
         }
     }
@@ -164,11 +164,12 @@ if (is_array($averages)) {
     </form>
     <br>
     <!-- Display average stock and average price -->
-    <div class="averages">
-    <h2>Averages</h2>
-        <p><strong>Average Stock Level:</strong> <?php echo $average_stock; ?></p>
-        <p><strong>Average Price:</strong> <?php echo $average_price; ?></p>
-    </div>
+    <!-- <div class="averages">
+        <h2>Averages</h2>
+        <p><strong>Average Stock Level:</strong> <?php //echo round($average_stock, 2); ?></p>
+        <p><strong>Average Price:</strong> <?php //echo $average_price; ?></p>
+    </div> -->
+
 </section>
 
 <script src="js/adminScript.js"></script>
