@@ -56,41 +56,34 @@ if(!isset($user_id)){
       </div>
    </div> <br>
 
-   <div class="content-container">
-    <div class="section">
-        <h3>WHAT COPPER</h3><br>
-        <p>
-            The copper products produced include wedding items such as pahar, tepak sireh, dulang, rose water sprinklers, 
-            and many others, as well as cookie molds and souvenirs. This company also makes royal items such as scepters, belt buckles, 
-            decorative eggs, palace interior decorations, mosque pulpits, and many more. This company is the largest producer of 
-            copper goods in the state of Terengganu Darul Iman.
-        </p>
-        <div class="image-grid-1">
-            <img src="assets/tepak sireh.png" alt="Copper Product 1">
-            <img src="assets/batu bersurat.png" alt="Copper Product 2">
-            <img src="assets/sudu garfu.png" alt="Copper Product 1">
-            <img src="assets/dulang.png" alt="Copper Product 2">
-            <img src="assets/gobek.png" alt="Copper Product 1">
-            <img src="assets/IMG_4861.png" alt="Copper Product 2">
-        </div>
+   <div class="section">
+    <div class="image-grid-2">
+        <img src="assets/kilat.png" alt="Copper Product 1">
+        <img src="assets/cuci.png" alt="Copper Product 2">
+        <img src="assets/nempel.png" alt="Copper Product 3">
+        <img src="assets/IMG_4883.png" alt="Copper Product 4">
     </div>
-<br><br>
-    <div class="section">
-        <h3>ABOUT WANISMA BRASS</h3><br>
+    <br><br>
+    <h3>ABOUT WANISMA BRASS</h3>
+    <br>
+    <div class="text-container">
         <p>
             This copper enterprise serves as an identity for the state of Terengganu Darul Iman and attracts tourists from both domestic
             and international destinations to witness the rich local folk art, abundant with delicate handiwork. 
             These copper products are branded as Wanisma Brass, a blend of five types of metals including bronze, in proportions as 
             determined.
         </p>
-        <div class="image-grid-2">
-            <img src="assets/kilat.png" alt="Copper Product 1">
-            <img src="assets/lilin.png" alt="Copper Product 2">
-            <img src="assets/cuci.png" alt="Copper Product 3">
-            <img src="assets/nempel.png" alt="Copper Product 4">
-        </div>
+        <p>
+            The copper products produced include wedding items such as pahar, tepak sireh, dulang, rose water sprinklers, 
+            and many others, as well as cookie molds and souvenirs. This company also makes royal items such as scepters, belt buckles, 
+            decorative eggs, palace interior decorations, mosque pulpits, and many more. This company is the largest producer of 
+            copper goods in the state of Terengganu Darul Iman.
+        </p>
     </div>
+    <br>
+    
 </div>
+    <br><br>
 </section>
 
 <?php include 'footer.php'; ?>
