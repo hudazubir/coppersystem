@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','system_copper') or die('connection failed');
+$conn = mysqli_connect('localhost','root','','coppercraft_system') or die('connection failed');
 
 ?>

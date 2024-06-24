@@ -64,24 +64,21 @@ if (isset($_POST['update_stock'])) {
 $product_query = "SELECT productID, productName FROM product";
 $product_result = mysqli_query($conn, $product_query);
 
-// Execute the Python script and fetch the results
-$command = escapeshellcmd('python3 sma_method/calculate_averages.py');
+// Fetch existing stocks for dropdown
+$stock_query = "SELECT stockID, productID, totalstock FROM stock";
+$stock_result = mysqli_query($conn, $stock_query);
+
+// Execute the Python script to get the output
+$command = escapeshellcmd('python sma_method/calculateAverage.py');
 $output = shell_exec($command);
-$averages = json_decode($output, true);
 
-// Initialize average stock and average price to default values
-$average_stock = 0;
-$average_price = 'RM 0.00';
+// Split the output into average stock and average price
+list($average_stock_str, $average_price_str) = explode(',', $output);
 
-// Check if averages were calculated correctly
-if (is_array($averages)) {
-    if (isset($averages['average_stock'])) {
-        $average_stock = $averages['average_stock'];
-    }
-    if (isset($averages['average_price'])) {
-        $average_price = $averages['average_price'];
-    }
-}
+// Initialize average stock and average price
+$average_stock = trim(str_replace('Average Stock :', '', $average_stock_str));
+$average_price = trim(str_replace('Average Price :', '', $average_price_str));
+
 ?>
 
 <!DOCTYPE html>
@@ -98,6 +95,46 @@ if (is_array($averages)) {
    <!-- custom admin css file link  -->
    <link rel="stylesheet" href="css/admin.css">
 
+   <style>
+   .averages {
+        margin-top: 20px;
+        text-align: center; /* Center align the content within .averages */
+    }
+
+    .averages h2 {
+        font-size: 2.2rem; /* Adjust the font size as needed */
+        color: var(--blue); /* Use your preferred color variable */
+        margin-bottom: 1rem;
+    }
+
+    .averages table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+    }
+
+    .averages table th,
+    .averages table td {
+        padding: 12px;
+        border: 1px solid #000;
+        text-align: left;
+    }
+
+    .averages table th {
+        background-color: #f2f2f2;
+        font-size: 1.6rem;
+        color: var(--black); /* Use your preferred color variable */
+    }
+
+    .averages table td {
+        font-size: 1.6rem;
+        color: var(--black); /* Use your preferred color variable */
+    }
+   </style>
 </head>
 <body>
 
@@ -107,11 +144,11 @@ if (is_array($averages)) {
     <h1 class="title">Product Stock</h1>
     
     <?php
-    if (!empty($message)) {
-        foreach ($message as $message) {
-            echo "<div class='message'>$msg</div>";
-        }
-    }
+    // if (!empty($message)) {
+    //     foreach ($message as $message) {
+    //         echo "<div class='message'>$msg</div>";
+    //     }
+    // }
     ?>
 
     <!-- Form to add new stock -->
@@ -144,8 +181,6 @@ if (is_array($averages)) {
         <select name="stock_id" required>
             <option value="">Select</option>
             <?php
-            $stock_query = "SELECT stockID, productID, totalstock FROM stock";
-            $stock_result = mysqli_query($conn, $stock_query);
             if ($stock_result && mysqli_num_rows($stock_result) > 0) {
                 while ($stock = mysqli_fetch_assoc($stock_result)) {
                     echo "<option value='{$stock['stockID']}'>Stock ID: {$stock['stockID']} (Total: {$stock['totalstock']})</option>";
@@ -162,14 +197,23 @@ if (is_array($averages)) {
 
         <input type="submit" name="update_stock" value="Update Stock">
     </form>
-    <br>
-    <!-- Display average stock and average price -->
-    <!-- <div class="averages">
-        <h2>Averages</h2>
-        <p><strong>Average Stock Level:</strong> <?php //echo round($average_stock, 2); ?></p>
-        <p><strong>Average Price:</strong> <?php //echo $average_price; ?></p>
-    </div> -->
 
+    <br>
+
+    <!-- Display average stock and average price -->
+    <div class="averages">
+        <h2>AVERAGE OF PRODUCT AND STOCK</h2>
+        <table>
+            <tr>
+                <td><strong>Average Stock</strong></td>
+                <td><?php echo $average_stock; ?></td>
+            </tr>
+            <tr>
+                <td><strong>Average Price</strong></td>
+                <td><?php echo $average_price; ?></td>
+            </tr>
+        </table>
+    </div>
 </section>
 
 <script src="js/adminScript.js"></script>

@@ -18,6 +18,6 @@
 
    </div>
 
-   <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> by <span>web designer</span> </p>
+   <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> by <span>web designer | NHZ </span> </p>
 
 </section>

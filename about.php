@@ -81,9 +81,23 @@ if(!isset($user_id)){
         </p>
     </div>
     <br>
-    
 </div>
-    <br><br>
+    <br><br><br><br>
+    <!-- Map section -->
+   <div class="map-container">
+   <h3 style="text-align: center; font-size: 2.5rem; text-transform: uppercase;">Our Location</h3><br>
+   <div class="map">
+         <!-- Embed Google Maps iframe code -->
+         <iframe
+            width="100%"
+            height="400"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.505217709472!2d103.130000!3d5.300000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdbc5b20f4f4c3%3A0x48db11be87a58d3e!2sPusat%20Perniagaan%20Ladang%20Tok%20Pelam%20%28Blok%20G%29!5e0!3m2!1sen!2smy!4v1624464890675!5m2!1sen!2smy"
+            allowfullscreen>
+         </iframe>
+      </div>
+   </div>
+
 </section>
 
 <?php include 'footer.php'; ?>

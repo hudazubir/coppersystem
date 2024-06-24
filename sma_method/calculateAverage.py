@@ -6,7 +6,7 @@ def get_database_connection():
         host="localhost",
         user="root",
         password="",
-        database="system_copper"
+        database="coppercraft_system"
     )
 
 def calculate_averages():
@@ -35,11 +35,13 @@ def calculate_averages():
     conn.close()
 
     return {
-        "average_stock": average_stock,
-        "average_price": formatted_average_price
+        "Average Stock": average_stock,
+        "Average Price": formatted_average_price
     }
 
 if __name__ == "__main__":
     averages = calculate_averages()
-    output = f"Average Stock: {averages['average_stock']}, \nAverage Price: {averages['average_price']}"
+    # Format the output as required
+    output = f"Average Stock : {averages['Average Stock']} , Average Price : {averages['Average Price']}"
+    # Print the result as a JSON string
     print(output)
